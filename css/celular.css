@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body, html {
+    background-color: val(--cor1);
+}
+
+header {
+    background-color: var(--cor2);
+}
+
+header h1 {
+    text-align: center;
+    padding: 15px;
+}
+
+main {
+    background-color: aqua;
+    height: 86vh;
+    padding: 15px;
+}
+
+main article {
+    background-color: aquamarine;
+    width: 85vw;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+}
