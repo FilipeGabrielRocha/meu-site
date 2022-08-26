@@ -8,12 +8,13 @@
     --cor4: #070826;
     --cor5: #0D0D0D;
     --cor6: #000000;
+    --cor7: #f5f5f5;
 }
 
 header span#menu {
     display: block;
     text-align: center;
-    background-color: var(--cor5);
+    background-color: var(--cor6);
     color: white;
     padding: 10px;
     cursor: pointer;
@@ -26,11 +27,11 @@ header span#menu:hover {
 
 header ul {
     list-style-type: none;
-    background-color: var(--cor2);
+    background-color: var(--cor4);
 }
 
 header li {
-    border: 2px solid var(--cor4);
+    border: 2px solid var(--cor6);
     padding: 10px;
     text-align: center;
 }
@@ -41,10 +42,9 @@ header a {
 }
 
 header li:hover {
-    background-color: var(--cor4);
-    cursor: pointer;
+    background-color: var(--cor3);
 }
 
-header menu {
+header menu#itens {
     display: none;
 }
