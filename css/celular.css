@@ -30,7 +30,6 @@ header h1 {
 main {
     background-color: var(--cor7);
     padding: 15px;
-    height: 85vh;
 }
 
 main article {

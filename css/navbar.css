@@ -20,11 +20,6 @@ header span#menu {
     cursor: pointer;
 }
 
-/* header span#menu:hover {
-    background-color: var(--cor0);
-    color: var(--cor6);
-} */
-
 header ul {
     list-style-type: none;
     background-color: var(--cor4);

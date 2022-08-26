@@ -12,6 +12,10 @@
 }
 
 @media screen and (min-width: 992px) {
+    main {
+        height: 88vh;
+    }
+
     main article {
         width: 700px;
     }
