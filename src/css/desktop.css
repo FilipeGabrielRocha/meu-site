@@ -11,13 +11,13 @@
     --cor7: #f5f5f5;
 }
 
-@media screen and (min-width: 600px) and (max-width: 767px) {
+@media screen and (min-width: 992px) {
     main {
-        height: 83vh;
+        height: 88vh;
     }
 
     main article {
-        /* width: 650px; */
+        width: 700px;
     }
 
     body header menu#itens {
@@ -39,5 +39,9 @@
 
     body header span#menu {
         display: none;
+    }
+
+    article picture a img {
+        width: 320px;
     }
 }
