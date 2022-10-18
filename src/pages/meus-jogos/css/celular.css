@@ -57,8 +57,7 @@ header menu#itens {
 }
 
 main {
-    padding: 0px 15px 15px 15px;
-    background-color: aqua;
+    padding: 15px 15px 15px 15px;
 }
 
 main article.texto {
@@ -66,7 +65,7 @@ main article.texto {
     margin: auto;
     padding: 15px;
     background-color: var(--cor7);
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
     margin-bottom: 10px;
 }
@@ -76,17 +75,119 @@ main article.texto p {
 }
 
 main article.jogos {
-    background-color: antiquewhite;
-    padding: 10px 35px;
+    padding: 10px 30px;
+    border: 3px solid black;
+    background-color: rgba(128, 128, 128, 0.712);
 }
 
 main article.jogos ul {
-    gap: 100px;
+    gap: 85px;
     columns: 2;
     list-style-type: '\1F3AE\00A0';
 }
 
-main article.jogos ul {
+.jogo-btn {
+    background-color: white;
+    margin: 5px;
+    width: 175px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.jogo-btn:hover {
+    transform: translate(5px, 0px);
+    transition: transform .2s;
+}
+
+#anthem:hover {
+    color: #ed3e4f;
+    transition: color .2s, transform .2s;
+}
+
+#apex-legends:hover {
+    color: white;
+    background-color: #CD3233;
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#destiny:hover {
+    color: #B78C25;
+    background-image: linear-gradient(to top, #10151D, #354864);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#the-last:hover {
+    color: #f7c466;
+    background-image: linear-gradient(to top, #0A0A0A, #646464);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#uncharted:hover {
+    color: #dddddd;
+    background-image: linear-gradient(to top, #B08C59, #e4b370);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#elite-dangerous:hover {
+    color: #dddddd;
+    background-image: linear-gradient(to top, #06050E, #4D8DC9);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#gow:hover {
+    color: #CBCCD2;
+    background-image: linear-gradient(to top, #912025, #eb3941);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#grand-chase:hover {
+    color: #F15A29;
+    background-image: linear-gradient(to top, #191818, #726c6c);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#lunia-z:hover {
+    color: #dddddd;
+    background-image: linear-gradient(to top, #FFAC12, #fcc359);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#minecraft:hover {
+    color: #5e9c2d;
+    background-image: linear-gradient(to top, #62371F, #BF7946);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#path-of-exile:hover {
+    color: #747b7c;
+    background-image: linear-gradient(to top, #531907, #c22109);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#runescape:hover {
+    color: #757575;
+    background-image: linear-gradient(to top, #E37E03, #FFFF54);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#speed-racer:hover {
+    color: #ca2b0b;
+    background-image: linear-gradient(to top, #757575, #c4c4c4);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#star-craft:hover {
+    color: #B0CEDB;
+    background-image: linear-gradient(to top, #000000, #033A6E);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#titanfall:hover {
+    color: #CBCCD2;
+    background-image: linear-gradient(to top, #000000, #128071);
+    transition: background-image 0.4s, color .2s, transform .2s;
 }
 
 footer {

@@ -57,7 +57,7 @@ header menu#itens {
 }
 
 main article {
-    width: 88vw;
+    width: 87vw;
     margin: auto;
     padding: 15px;
     background-color: var(--cor7);
@@ -66,11 +66,34 @@ main article {
     margin-bottom: 10px;
 }
 
+article p {
+    text-align: justify;
+    text-indent: 20px;
+    padding-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+
+article img {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.445);
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+article aside {
+    background-color: var(--cor2);
+    color: var(--cor0);
+    padding: 10px;
+    width: 280px;
+    margin: auto;
+    margin-top: 10px;
+}
+
 footer {
     background-color: var(--cor0);
     text-align: center;
     padding: 5px;
-    align-items: center;
 }
 
 footer a {
