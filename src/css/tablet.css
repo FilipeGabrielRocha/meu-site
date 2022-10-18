@@ -9,15 +9,65 @@
     --cor5: #0D0D0D;
     --cor6: #000000;
     --cor7: #f5f5f5;
+    --cor8: #F2AE72;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    header {
+        background-color: var(--cor1);
+    }
+    
+    header h1 {
+        text-align: center;
+        padding: 30px;
+        color: var(--cor8);
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.562);
+    }
+    
+    header span#menu {
+        display: block;
+        text-align: center;
+        background-color: var(--cor6);
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    header ul {
+        list-style-type: none;
+        background-color: var(--cor4);
+    }
+    
+    header li {
+        border: 2px solid var(--cor6);
+        padding: 10px;
+        text-align: center;
+    }
+    
+    header a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    header li:hover {
+        background-color: var(--cor3);
+    }
+    
+    header menu#itens {
+        display: none;
+    }
+
     main {
-        height: 87vh;
+        background-color: var(--cor0);
+        /* height: 87vh; */
     }
 
     main article {
+        background-color: var(--cor7);
         width: 650px;
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
+        margin-bottom: 10px;
     }
 
     body header menu#itens {

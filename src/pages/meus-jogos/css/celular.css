@@ -19,7 +19,6 @@ header {
 header h1 {
     text-align: center;
     padding: 30px;
-    /* color: var(--cor0); */
     color: var(--cor8);
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.562);
 }
@@ -58,11 +57,11 @@ header menu#itens {
 }
 
 main {
-    background-color: var(--cor0);
     padding: 0px 15px 15px 15px;
+    background-color: aqua;
 }
 
-main article {
+main article.texto {
     width: 85vw;
     margin: auto;
     padding: 15px;
@@ -72,18 +71,22 @@ main article {
     margin-bottom: 10px;
 }
 
-article p {
+main article.texto p {
     text-align: justify;
-    text-indent: 20px;
-    padding-bottom: 20px;
-    font-size: 1.2em;
-    line-height: 1.3em;
 }
 
-picture img {
-    display: block;
-    margin: auto;
-    padding-bottom: 20px;
+main article.jogos {
+    background-color: antiquewhite;
+    padding: 10px 35px;
+}
+
+main article.jogos ul {
+    gap: 100px;
+    columns: 2;
+    list-style-type: '\1F3AE\00A0';
+}
+
+main article.jogos ul {
 }
 
 footer {
@@ -100,11 +103,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-@media screen and (min-width: 600) and (max-width: 768) {
-
-    body::-webkit-scrollbar {
-        display: none;
-    }
 }
