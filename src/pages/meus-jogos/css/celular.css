@@ -61,7 +61,8 @@ main {
 }
 
 main article.texto {
-    width: 85vw;
+    font-size: 18px;
+    width: 75vw;
     margin: auto;
     padding: 15px;
     background-color: var(--cor7);
@@ -78,22 +79,25 @@ main article.jogos {
     padding: 10px 30px;
     border: 3px solid black;
     background-color: rgba(128, 128, 128, 0.712);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main article.jogos ul {
-    gap: 85px;
-    columns: 2;
     list-style-type: '\1F3AE\00A0';
 }
 
 .jogo-btn {
     background-color: white;
-    margin: 5px;
-    width: 175px;
+    margin: 0px 0px 10px 0px;
+    width: 200px;
+    padding: 5px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 15px;
     font-weight: bold;
     cursor: pointer;
+    font-size: 18px;
 }
 
 .jogo-btn:hover {
@@ -187,6 +191,12 @@ main article.jogos ul {
 #titanfall:hover {
     color: #CBCCD2;
     background-image: linear-gradient(to top, #000000, #128071);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#hearthstone:hover {
+    color: #3ED5F8;
+    background-image: linear-gradient(to top, #4d392d, #aa8054);
     transition: background-image 0.4s, color .2s, transform .2s;
 }
 
