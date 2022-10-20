@@ -80,7 +80,6 @@ main section.jogos {
     border: 3px solid black;
     background-color: rgba(128, 128, 128, 0.712);
     width: 240px;
-    margin: auto;
 }
 
 main section.jogos ul {
@@ -111,6 +110,25 @@ main section.jogos ul {
 .jogo-btn:hover {
     transform: translate(5px, 0px);
     transition: transform .2s;
+}
+
+section#telefone {
+    background: url(../img/frame-iphone.png) no-repeat top center;
+    background-size: cover;
+
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    height: 610px;
+    width: 300px;
+}
+
+iframe#tela {
+    position: relative;
+    top: 78px;
+    left: 20px;
+    width: 260px;
+    height: 459px;
 }
 
 #anthem:hover {
