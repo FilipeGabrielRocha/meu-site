@@ -97,7 +97,6 @@ iframe#tela {
 }
 
 section#jogos {
-    border: 3px solid black;
     text-align: center;
 }
 
@@ -107,6 +106,14 @@ section#jogos a img {
     border-radius: 50%;
     background: black;
     text-align: center;
+    border: 3px solid black;
+}
+
+section#jogos a img:hover {
+    border: 3px solid green;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+    transition: transform .3s, border .2s;
 }
 
 footer {
@@ -114,6 +121,7 @@ footer {
     text-align: center;
     padding: 5px;
     align-items: center;
+    margin-top: 440px;
 }
 
 footer a {
