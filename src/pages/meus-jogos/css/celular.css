@@ -58,9 +58,10 @@ header menu#itens {
 
 main {
     padding: 15px;
+    position: relative;
 }
 
-main section.texto {
+section#texto {
     font-size: 18px;
     width: 75vw;
     margin: auto;
@@ -71,159 +72,41 @@ main section.texto {
     margin-bottom: 10px;
 }
 
-main section.texto p {
+section#texto p {
     text-align: justify;
 }
 
-main section.jogos {
-    padding: 10px 10px 10px 30px;
-    border: 3px solid black;
-    background-color: rgba(128, 128, 128, 0.712);
-    width: 240px;
-}
-
-main section.jogos ul {
-    list-style-type: '\1F3AE\00A0';
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.jogos a {
-    text-decoration: none;
-    color: black;
-}
-
-.jogo-btn {
-    background-color: white;
-    margin: 0px 0px 10px 0px;
-    width: 200px;
-    padding: 5px;
-    text-align: center;
-    border-radius: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.jogo-btn:hover {
-    transform: translate(5px, 0px);
-    transition: transform .2s;
-}
-
 section#telefone {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    height: 435px;
+    width: 250px;
+    
     background: url(../img/frame-iphone.png) no-repeat top center;
     background-size: cover;
-
-    position: absolute;
-    top: 30%;
-    left: 5%;
-    height: 610px;
-    width: 300px;
 }
 
 iframe#tela {
     position: relative;
-    top: 78px;
-    left: 20px;
-    width: 260px;
-    height: 459px;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 435px;
 }
 
-#anthem:hover {
-    color: #ed3e4f;
-    transition: color .2s, transform .2s;
+section#jogos {
+    border: 3px solid black;
+    text-align: center;
 }
 
-#apex-legends:hover {
-    color: white;
-    background-color: #CD3233;
-    transition: background-image 0.4s, color .2s, transform .2s;
-}
-
-#destiny:hover {
-    color: #B78C25;
-    background-image: linear-gradient(to top, #10151D, #354864);
-    transition: background-image 0.4s, color .2s, transform .2s;
-}
-
-#the-last:hover {
-    color: #f7c466;
-    background-image: linear-gradient(to top, #0A0A0A, #646464);
-    transition: background-image 0.4s, color .2s, transform .2s;
-}
-
-#uncharted:hover {
-    color: #dddddd;
-    background-image: linear-gradient(to top, #B08C59, #e4b370);
-    transition: background-image 0.4s, color .2s, transform .2s;
-}
-
-#elite-dangerous:hover {
-    color: #dddddd;
-    background-image: linear-gradient(to top, #06050E, #4D8DC9);
-    transition: background-image 0.4s, color .2s, transform .2s;
-}
-
-#gow:hover {
-    color: #CBCCD2;
-    background-image: linear-gradient(to top, #912025, #eb3941);
-    transition: background-image 0.4s, color .2s, transform .2s;
-}
-
-#grand-chase:hover {
-    color: #F15A29;
-    background-image: linear-gradient(to top, #191818, #726c6c);
-    transition: background-image 0.4s, color .2s, transform .2s;
-}
-
-#lunia-z:hover {
-    color: #dddddd;
-    background-image: linear-gradient(to top, #FFAC12, #fcc359);
-    transition: background-image 0.4s, color .2s, transform .2s;
-}
-
-#minecraft:hover {
-    color: #5e9c2d;
-    background-image: linear-gradient(to top, #62371F, #BF7946);
-    transition: background-image 0.4s, color .2s, transform .2s;
-}
-
-#path-of-exile:hover {
-    color: #747b7c;
-    background-image: linear-gradient(to top, #531907, #c22109);
-    transition: background-image 0.4s, color .2s, transform .2s;
-}
-
-#runescape:hover {
-    color: #757575;
-    background-image: linear-gradient(to top, #E37E03, #FFFF54);
-    transition: background-image 0.4s, color .2s, transform .2s;
-}
-
-#speed-racer:hover {
-    color: #ca2b0b;
-    background-image: linear-gradient(to top, #757575, #c4c4c4);
-    transition: background-image 0.4s, color .2s, transform .2s;
-}
-
-#star-craft:hover {
-    color: #B0CEDB;
-    background-image: linear-gradient(to top, #000000, #033A6E);
-    transition: background-image 0.4s, color .2s, transform .2s;
-}
-
-#titanfall:hover {
-    color: #CBCCD2;
-    background-image: linear-gradient(to top, #000000, #128071);
-    transition: background-image 0.4s, color .2s, transform .2s;
-}
-
-#hearthstone:hover {
-    color: #3ED5F8;
-    background-image: linear-gradient(to top, #4d392d, #aa8054);
-    transition: background-image 0.4s, color .2s, transform .2s;
+section#jogos a img {
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    background: black;
+    text-align: center;
 }
 
 footer {
