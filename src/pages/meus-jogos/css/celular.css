@@ -98,6 +98,8 @@ iframe#tela {
 
 section#jogos {
     text-align: center;
+    width: 350px;
+    margin: auto;
 }
 
 section#jogos a img {
