@@ -81,7 +81,7 @@ section#telefone {
     top: 100%;
     left: 50%;
     transform: translate(-50%, 0%);
-    height: 435px;
+    height: 503px;
     width: 250px;
     
     background: url(../img/frame-iphone.png) no-repeat top center;
@@ -93,7 +93,7 @@ iframe#tela {
     top: 0px;
     left: 0px;
     width: 250px;
-    height: 435px;
+    height: 503px;
 }
 
 section#jogos {
@@ -123,7 +123,7 @@ footer {
     text-align: center;
     padding: 5px;
     align-items: center;
-    margin-top: 440px;
+    margin-top: 505px;
 }
 
 footer a {
