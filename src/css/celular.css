@@ -19,7 +19,6 @@ header {
 header h1 {
     text-align: center;
     padding: 30px;
-    /* color: var(--cor0); */
     color: var(--cor8);
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.562);
 }
@@ -57,13 +56,49 @@ header menu#itens {
     display: none;
 }
 
-main {
-    background-color: var(--cor0);
-    padding: 0px 15px 15px 15px;
+main#home {
+    margin-bottom: 5px;
 }
 
-main article {
+article#texto-home {
     width: 85vw;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
+    margin-bottom: 10px;
+    padding: 15px;
+    margin: auto;
+    background-color: var(--cor7);
+}
+
+article#texto-home p {
+    text-align: justify;
+    text-indent: 20px;
+    padding-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+
+article#texto-home img {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.445);
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+article#texto-home p#abaixoDaFoto {
+    margin-top: 10px;
+    padding-bottom: 0px;
+}
+
+footer#home {
+    background-color: var(--cor0);
+    text-align: center;
+    padding: 5px;
+    align-items: center;
+}
+
+main#sobre article {
+    width: 87vw;
     margin: auto;
     padding: 15px;
     background-color: var(--cor7);
@@ -72,25 +107,110 @@ main article {
     margin-bottom: 10px;
 }
 
-article p {
+main#sobre p {
     text-align: justify;
     text-indent: 20px;
     padding-bottom: 20px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.3em;
 }
 
-picture img {
+main#sobre img {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.445);
     display: block;
     margin: auto;
-    padding-bottom: 20px;
+    width: 300px;
 }
 
-footer {
+main#sobre aside {
+    background-color: var(--cor2);
+    color: var(--cor0);
+    padding: 10px;
+    width: 280px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+main#sobre span {
+    color: var(--cor2);
+    font-weight: bold;
+}
+
+footer#sobre {
     background-color: var(--cor0);
     text-align: center;
     padding: 5px;
     align-items: center;
+}
+
+main#meus-jogos {
+    padding: 15px;
+    position: relative;
+}
+
+section#texto {
+    font-size: 18px;
+    width: 75vw;
+    margin: auto;
+    padding: 15px;
+    background-color: var(--cor7);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
+    margin-bottom: 10px;
+}
+
+section#texto p {
+    text-align: justify;
+}
+
+section#telefone {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    height: 503px;
+    width: 250px;
+    
+    background: url(../img/frame-iphone.png) no-repeat top center;
+    background-size: cover;
+}
+
+iframe#tela {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 503px;
+}
+
+section#jogos {
+    text-align: center;
+    width: 350px;
+    margin: auto;
+}
+
+section#jogos a img {
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    background: black;
+    text-align: center;
+    border: 3px solid black;
+}
+
+section#jogos a img:hover {
+    border: 3px solid green;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+    transition: transform .3s, border .2s;
+}
+
+footer#meus-jogos {
+    background-color: var(--cor0);
+    text-align: center;
+    padding: 5px;
+    align-items: center;
+    margin-top: 505px;
 }
 
 footer a {
@@ -100,11 +220,4 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
-}
-
-@media screen and (min-width: 600) and (max-width: 768) {
-
-    body::-webkit-scrollbar {
-        display: none;
-    }
 }

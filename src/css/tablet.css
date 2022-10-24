@@ -57,17 +57,16 @@
         display: none;
     }
 
-    main {
-        background-color: var(--cor0);
-        /* height: 87vh; */
+    main#home article#texto-home {
+        width: 700px;
     }
 
-    main article {
-        background-color: var(--cor7);
-        width: 650px;
-        border-radius: 0px 0px 10px 10px;
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
-        margin-bottom: 10px;
+    main#sobre article#texto-home {
+        width: 700px;
+    }
+
+    section#texto {
+        width: 400px;
     }
 
     body header menu#itens {
