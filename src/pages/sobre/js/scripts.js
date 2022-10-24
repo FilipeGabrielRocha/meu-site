@@ -1,7 +1,14 @@
 function calcIdade() {
     let anoAtual = new Date().getFullYear()
+    let mesAtual = new Date().getMonth()
+    let diaAtual = new Date().getDay()
     let anoNasci = Number(2000)
-    idade.innerHTML = Number(anoAtual) - Number(anoNasci)
+
+    if (diaAtual === 14 && mesAtual === 11) {
+        idade.innerHTML = Number(anoAtual) - Number(anoNasci)
+    } else{
+        idade.innerHTML = (Number(anoAtual) - Number(anoNasci) - 1)
+    }
 }
 
 function clickMenu() {
