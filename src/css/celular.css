@@ -131,7 +131,7 @@ main#sobre aside {
     margin-top: 10px;
 }
 
-main#sobre span {
+main#sobre span#sobre {
     color: var(--cor2);
     font-weight: bold;
 }
