@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../../css/iframe.css">
     <title>Meus Jogos</title>
 </head>
-<body onresize="mudouTamanho()">
+<body id="meus-jogos" onresize="mudouTamanho()">
     <header>
         <h1>Site do Rocha</h1>
         <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -62,7 +62,29 @@
 
         </section>
         <section id="telefone">
-            <iframe src="../meus-jogos/iframes/tela-azul-windows.html" frameborder="0" name="tela" id="tela"></iframe>
+            <iframe src="../meus-jogos/iframes/tela-vermelha-celular.html" frameborder="0" name="tela" id="tela"></iframe>
+        </section>
+        <section id="jogos-pc">
+            <ul id="lista-jogos">
+                <li class="btn" id="anthem">Anthem</li>
+                <li class="btn">Apex Legends</li>
+                <li class="btn">Destiny</li>
+                <li class="btn">The Last of Us</li>
+                <li class="btn">Uncharted</li>
+                <li class="btn">Elite Dangerous</li>
+                <li class="btn">God of War</li>
+                <li class="btn">Grand Chase</li>
+                <li class="btn">Lunia Z</li>
+                <li class="btn">Minecraft</li>
+                <li class="btn">Path of Exile</li>
+                <li class="btn">Runscape</li>
+                <li class="btn">Speed Racer</li>
+                <li class="btn">StarCraft 2</li>
+                <li class="btn">Titanfall 2</li>
+            </ul>
+        </section>
+        <section id="pc">
+            <iframe src="iframes/telas-pc/tela-azul-windows.html" frameborder="0" name="tela" id="tela"></iframe>
         </section>
     </main>
     <footer id="meus-jogos">

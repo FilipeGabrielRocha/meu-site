@@ -10,6 +10,7 @@
     --cor6: #000000;
     --cor7: #f5f5f5;
     --cor8: #F2AE72;
+    --cor9: #b3b3b3;
 }
 
 @media screen and (min-width: 992px) {
@@ -97,5 +98,94 @@
 
     article picture a img {
         width: 320px;
+    }
+
+    /* PÁGINA HOME */
+
+    article#texto-home {
+        width: 700px;
+    }
+
+    /* PÁGINA SOBRE */
+
+    main#sobre article#texto-sobre {
+        width: 700px;
+    }
+
+    /* PÁGINA MEUS JOGOS */
+
+    main#meus-jogos section#jogos, main#meus-jogos section#telefone {
+        display: none;
+    }
+
+    main#meus-jogos, body#meus-jogos {
+        background-color: var(--cor9);
+    }
+
+    main#meus-jogos section#texto {
+        width: 500px;
+    }
+
+    main#meus-jogos section#jogos-pc, main#meus-jogos section#pc {
+        display: block;
+    }
+
+    #jogos-pc {
+        width: 1050px;
+        margin: auto;
+        padding: 5px;
+    }
+
+    #lista-jogos {
+        columns: 5;
+        text-align: center;
+        list-style-type: none;
+        font-weight: bold;
+    }
+
+    #lista-jogos li {
+        cursor: pointer;
+    }
+
+    .btn {
+        background-color: var(--cor0);
+        padding: 20px 0px;
+        margin: 10px;
+        border-radius: 30px;
+    }
+
+    .btn:hover {
+        transform: translate(-3px, -3px);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+        transition: transform .2s;
+    }
+
+    #anthem:hover {
+            color: #ed3e4f;
+            transition: color .2s, transform .2s;
+    }
+
+    #anthem {
+        margin-top: 0px;
+    }
+
+    #pc {
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        height: 503px;
+        width: 1050px;
+
+        background: url(../pages/meus-jogos/img/frame-iphone.png) no-repeat top center;
+        background-size: cover;
+    }
+
+    section#pc iframe#tela {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 1050px;
+        height: 503px;
     }
 }

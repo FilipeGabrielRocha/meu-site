@@ -221,3 +221,8 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* PÁGINA MEUS JOGOS */
+main#meus-jogos section#jogos-pc, main#meus-jogos section#pc {
+    display: none;
+}
