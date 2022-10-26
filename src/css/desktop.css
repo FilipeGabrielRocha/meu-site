@@ -143,9 +143,9 @@
         font-weight: bold;
     }
 
-    #lista-jogos li {
+    /* #lista-jogos li {
         cursor: pointer;
-    }
+    } */
 
     .btn {
         background-color: var(--cor0);
@@ -174,18 +174,22 @@
         top: 95%;
         left: 50%;
         transform: translate(-50%, 0%);
-        height: 503px;
-        width: 1050px;
+        width: 900px;
+        height: 564px;
 
         background: url(../pages/meus-jogos/img/frame-iphone.png) no-repeat top center;
         background-size: cover;
     }
 
-    section#pc iframe#tela {
+    section#pc iframe#tela2 {
         position: relative;
         top: 0px;
         left: 0px;
-        width: 1050px;
-        height: 503px;
+        width: 900px;
+        height: 565px;
+    }
+
+    footer#meus-jogos {
+        margin-top: 555px;
     }
 }
