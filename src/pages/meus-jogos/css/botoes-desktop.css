@@ -1,0 +1,133 @@
+.btn:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+    transition: transform .2s;
+}
+
+#jogos-pc #lista-jogos .anthem:hover a {
+    color: #ed3e4f;
+    transition: color .2s, transform .2s;
+}
+
+#jogos-pc #lista-jogos .apex-legends:hover {
+    color: white;
+    background-color: #CD3233;
+    transition: background-image .2s, color .2s, transform .2s;
+}
+
+#jogos-pc #lista-jogos .apex-legends:hover a {
+    color: white;
+}
+
+#jogos-pc #lista-jogos .destiny:hover {
+    background-image: linear-gradient(to top, #10151D, #354864);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#jogos-pc #lista-jogos .destiny:hover a {
+    color: #f7c466;
+}
+
+#jogos-pc #lista-jogos .the-last:hover {
+    background-image: linear-gradient(to top, #0A0A0A, #646464);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#jogos-pc #lista-jogos .the-last:hover a {
+    color: #f7c466;
+}
+
+#jogos-pc #lista-jogos .uncharted:hover {
+    background-image: linear-gradient(to top, #B08C59, #e4b370);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#jogos-pc #lista-jogos .uncharted:hover a {
+    color: #dddddd;
+}
+
+#jogos-pc #lista-jogos .elite-dangerous:hover {
+    background-image: linear-gradient(to top, #06050E, #4D8DC9);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#jogos-pc #lista-jogos .elite-dangerous:hover a {
+    color: #dddddd;
+}
+
+#jogos-pc #lista-jogos .gow:hover {
+    background-image: linear-gradient(to top, #912025, #eb3941);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#jogos-pc #lista-jogos .gow:hover a {
+    color: #CBCCD2;
+}
+
+#jogos-pc #lista-jogos .grand-chase:hover {
+    background-image: linear-gradient(to top, #191818, #726c6c);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#jogos-pc #lista-jogos .grand-chase:hover a {
+    color: #F15A29;
+}
+
+#jogos-pc #lista-jogos .lunia-z:hover {
+    background-image: linear-gradient(to top, #FFAC12, #fcc359);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#jogos-pc #lista-jogos .minecraft:hover {
+    background-image: linear-gradient(to top, #62371F, #BF7946);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#jogos-pc #lista-jogos .minecraft:hover a {
+    color: #5e9c2d;
+}
+
+#jogos-pc #lista-jogos .path-of-exile:hover {
+    background-image: linear-gradient(to top, #531907, #c22109);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#jogos-pc #lista-jogos .path-of-exile:hover a {
+    color: #747b7c;
+}
+
+#jogos-pc #lista-jogos .runescape:hover {
+    background-image: linear-gradient(to top, #E37E03, #FFFF54);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#jogos-pc #lista-jogos .runescape:hover a {
+    color: #757575;
+}
+
+#jogos-pc #lista-jogos .speed-racer:hover {
+    background-image: linear-gradient(to top, #757575, #c4c4c4);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#jogos-pc #lista-jogos .speed-racer:hover a {
+    color: #ca2b0b;
+}
+
+#jogos-pc #lista-jogos .star-craft:hover {
+    background-image: linear-gradient(to top, #000000, #033A6E);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#jogos-pc #lista-jogos .star-craft:hover a {
+    color: #B0CEDB;
+}
+
+#jogos-pc #lista-jogos .titanfall:hover {
+    background-image: linear-gradient(to top, #000000, #128071);
+    transition: background-image 0.4s, color .2s, transform .2s;
+}
+
+#jogos-pc #lista-jogos .titanfall:hover a {
+    color: #CBCCD2;
+}

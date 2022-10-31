@@ -143,26 +143,17 @@
         font-weight: bold;
     }
 
-    /* #lista-jogos li {
-        cursor: pointer;
-    } */
-
     .btn {
         background-color: var(--cor0);
         padding: 20px 0px;
         margin: 10px;
         border-radius: 30px;
+        color: black;
     }
 
-    .btn:hover {
-        transform: translate(-3px, -3px);
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
-        transition: transform .2s;
-    }
-
-    #anthem:hover {
-            color: #ed3e4f;
-            transition: color .2s, transform .2s;
+    .btn a {
+        color: black;
+        text-decoration: none;
     }
 
     #anthem {
