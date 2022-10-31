@@ -112,6 +112,13 @@
         width: 700px;
     }
 
+    h1#titulo-2 {
+        text-align: center;
+        padding: 15px;
+        font-size: 60px;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.233);
+    }
+
     /* PÁGINA MEUS JOGOS */
 
     main#meus-jogos section#jogos, main#meus-jogos section#telefone {
@@ -156,7 +163,7 @@
         text-decoration: none;
     }
 
-    #anthem {
+    .anthem {
         margin-top: 0px;
     }
 
