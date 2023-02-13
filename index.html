@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <link rel="shortcut icon" href="src/favicon/filipe-rocha.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="src/css/font-awesome.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <title>Meu Site</title>
+</head>
+<body onload="calcIdade()">
+    <header class="cabeca">
+        <div class="cabeca-container">
+            <a href="#" class="logo">
+                <img src="src/img/foto-logo/filipe-rocha.png" alt="logo">
+            </a>
+            <div id="menu-hamburguer" class="menu-hamburguer"></div>
+            <nav id="nav" class="desativado">
+                <ul class="menu">
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>Sobre</li>
+                    </a>
+                    <a href="#">
+                        <li>Meus Jogos</li>
+                    </a>
+                    <a href="#">
+                        <li>Contato</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="home">
+        <div class="texto-objetivo">
+            <p>
+                Este site é meramente um treino, estou criando sem nenhuma tecnologia a mais, apenas <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>. Estou colocando em prática o conhecimentos adquiridos em meus estudos.
+            </p>
+
+            <p>
+                Todas as páginas que vão ser criadas são com o intuito de testar minhas habilidades, <strong>NÃO SERÁ USADO PARA FINS LUCRATIVOS</strong>, caso a empresa dona do site, que eu copiei, queira que eu remova o conteúdo, assim será feito sem resistência.
+            </p>
+
+            <p>
+                Estou estudando através de canais de YouTube e cursos Onlines.
+            </p>
+
+            <p>
+                O intuito desse site é falar um pouco sobre mim e de alguns dos jogos que eu joguei na minha vida até então, os jogos que estarão amostra no meu site, são os meus preferidos e que marcaram minha vida de jogador de jogos eletrônicos, vulgo Gamer.
+            </p>
+        </div>
+        <div class="image foto-minha-fundo"></div>
+        <div class="image foto-minha-perfil"></div>
+        <div id="sobre" class="sobre-mim">
+            <p>
+                Oi, Meu nome é Filipe Gabriel Rocha, seja bem-vindo(a)!
+            </p>
+
+            <p>
+                Sou apaixonado por tecnologia, entrei na área de estudo da programação desde 2020, comecei por backend, mas quando tive um contato com frontend foi o momento que realmente vi que queria seguir carreira por lá, desde então estou estudando as tecnologias <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span> e me aventurando nos frameworks.
+            </p>
+
+            <div class="info-minha">
+                <p>
+                    <strong>Nome:</strong> Filipe Gabriel Rocha<br>
+                    <strong>Nascimento:</strong> 14/11/2000<br>
+                    <strong>Idade: </strong><span id="idade"></span> anos<br>
+                    <strong>Estado Civil</strong>: Solteiro<br>
+                    <strong>Estado Socialmente:</strong> Namorando<br>
+                    <strong>Hobbie:</strong> Jogar jogos eletrônicos
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="meus-jogos">
+        <div class="jogo">
+            <a href="src/pages/anthem.html" target="tela">
+                <img src="src/img/foto-meus-jogos/anthem-logo.jpg" alt="anthem">
+            </a>
+        </div>
+        <div class="jogo">
+            <a href="src/pages/apex-legends.html" target="tela">
+                <img src="src/img/foto-meus-jogos/apex-legends-logo.png" alt="apex legends">
+            </a>
+        </div>
+        <div class="jogo">
+            <a href="src/pages/destiny.html" target="tela">
+                <img src="src/img/foto-meus-jogos/destiny-logo.png" alt="destiny">
+            </a>
+        </div>
+        <div class="jogo cor-de-fundo">
+            <a href="src/pages/elite-dangerous.html" target="tela">
+                <img src="src/img/foto-meus-jogos/elite-dangerous-logo.png" alt="elite dangerous">
+            </a>
+        </div>
+        <div class="jogo">
+            <a href="src/pages/god-of-war.html" target="tela">
+                <img src="src/img/foto-meus-jogos/god-of-war-logo.jpg" alt="god of war">
+            </a>
+        </div>
+        <div class="jogo">
+            <a href="src/pages/grand-chase.html" target="tela">
+                <img src="src/img/foto-meus-jogos/grandchase-logo.jpg" alt="grand chase">
+            </a>
+        </div>
+        <div class="jogo">
+            <a href="src/pages/lunia-z.html" target="tela">
+                <img src="src/img/foto-meus-jogos/lunia-z-logo.jpg" alt="lunia z">
+            </a>
+        </div>
+        <div class="jogo cor-de-fundo">
+            <a href="src/pages/minecraft.html" target="tela">
+                <img src="src/img/foto-meus-jogos/minecraft-logo.png" alt="minecraft">
+            </a>
+        </div>
+        <div class="jogo cor-de-fundo">
+            <a href="src/pages/path-of-exile.html" target="tela">
+                <img src="src/img/foto-meus-jogos/path-of-exile-logo.png" alt="path of exile">
+            </a>
+        </div>
+        <div class="jogo cor-de-fundo">
+            <a href="src/pages/runescape.html" target="tela">
+                <img src="src/img/foto-meus-jogos/runescape-logo.png" alt="runescape">
+            </a>
+        </div>
+        <div class="jogo">
+            <a href="src/pages/speed-racer.html" target="tela">
+                <img src="src/img/foto-meus-jogos/speedracer-logo.png" alt="speed racer">
+            </a>
+        </div>
+        <div class="jogo">
+            <a href="src/pages/starcraft-2.html" target="tela">
+                <img src="src/img/foto-meus-jogos/starcraft2-logo.png" alt="star craft 2">
+            </a>
+        </div>
+        <div class="jogo">
+            <a href="src/pages/the-last-of-us.html" target="tela">
+                <img src="src/img/foto-meus-jogos/the-last-logo.png" alt="the last of us">
+            </a>
+        </div>
+        <div class="jogo">
+            <a href="src/pages/titanfall-2.html" target="tela">
+                <img src="src/img/foto-meus-jogos/titanfall2-logo.png" alt="titanfall 2">
+            </a>
+        </div>
+        <div class="jogo">
+            <a href="src/pages/uncharted.html" target="tela">
+                <img src="src/img/foto-meus-jogos/uncharted-logo.jpg" alt="uncharted">
+            </a>
+        </div>
+    </section>
+
+    <div class="modal">
+        <div class="conteudo-modal">
+            <span class="fechar-modal">X</span>
+            <iframe src="src/pages/anthem.html" name="tela" id="tela" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <div class="caixa-rodape">
+            <a href="#" class="logo">
+                <img src="src/img/foto-logo/filipe-rocha.png" alt="logo">
+            </a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Meus Jogos</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="icones">
+            <a href="https://www.linkedin.com/in/filipe-gabriel-rocha-a4446516a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/FilipeGabrielRocha" target="_blank"><i class="fab fa-github-square"></i></a>
+            <a href="https://www.instagram.com/_filiperochaa/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://filipegabrielrocha.github.io/portfolio/" target="_blank"><i class="fas fa-server"></i></a>
+        </div>
+    </footer>
+    <script src="src/js/idade.js"></script>
+    <script src="src/js/menu.js"></script>
+    <script src="src/js/modal.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+</body>
+</html>

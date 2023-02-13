@@ -1,0 +1,326 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "cabeca"
+                         "home"
+                         "meus-jogos"
+                         "rodape";
+    grid-template-columns: 1fr;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: var(--DarkBlue1);
+}
+
+:root {
+    --DarkBlue1: #1c2431; /* (intro and email sign up background) */
+    --DarkBlue2: #181f2a; /* (main background) */
+    --DarkBlue3: #0b1523; /* (footer background) */
+    --DarkBlue4: #202a3c; /* (testimonials background) */
+    --Cyan: #65e2d9; /* (inside call-to-action gradient) */
+    --Blue: #339ecc; /* (inside call-to-action gradient) */
+    --LightRed: #ff4242; /* (error) */
+    --branco: #ffffff;
+    --preto: #000;
+    --azul: #0A66C2;
+    --rosa: #D40297;
+    --vermelho: #E3002D;
+    --amarelho: #F7BA21;
+    --max-width: 1920px;
+}
+
+/* CABECA */
+.cabeca {
+    grid-area: cabeca;
+}
+
+.cabeca .cabeca-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 75px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--DarkBlue4);
+}
+
+.cabeca .cabeca-container .logo {
+    margin: 10px 0px;
+    width: 70px;
+    height: 70px;
+    border: 3px solid var(--Blue);
+    border-radius: 50%;
+    background-color: var(--branco);
+}
+
+.cabeca .cabeca-container .menu-hamburguer {
+    background-color: var(--Blue);
+    width: 30px;
+    height: 2px;
+    position: relative;
+    margin: 10px 0px 20px 0px;
+}
+
+.cabeca .cabeca-container .menu-hamburguer:before {
+    background-color: var(--Blue);
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -10px;
+    display: block;
+}
+
+.cabeca .cabeca-container .menu-hamburguer:after {
+    background-color: var(--Blue);
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -10px;
+    display: block;
+}
+
+.cabeca .cabeca-container nav.desativado {
+    display: none;
+}
+
+.cabeca .cabeca-container nav .menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cabeca .cabeca-container nav .menu li {
+    padding: 10px;
+    margin: 3px 0px;
+    color: var(--Blue);
+}
+
+.cabeca .cabeca-container nav .menu li:hover {
+    background-color: var(--DarkBlue1);
+}
+
+/* HOME */
+.home {
+    grid-area: home;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* height: 60vh; */
+}
+
+.home .texto-objetivo {
+    padding: 25px;
+}
+
+.home .texto-objetivo p {
+    color: var(--branco);
+    text-align: justify;
+    margin-bottom: 8px;
+    font-size: 1.8rem;
+}
+
+.home .texto-objetivo p span,
+.home .texto-objetivo p strong {
+    color: var(--Cyan);
+}
+
+.home .image,
+.sobre .image {
+    width: 100%;
+    height: 100%;
+}
+
+.home .image.foto-minha-fundo {
+    background: url(../img/foto-minha/foto-fundo.jpg) no-repeat center center;
+    background-size: cover;
+    height: 320px;
+}
+
+.home .image.foto-minha-perfil {
+    background: url(../img/foto-minha/foto-perfil.jpg) no-repeat center center;
+    background-size: cover;
+    height: 320px;
+}
+
+.home .sobre-mim {
+    padding: 15px;
+}
+
+.home .sobre-mim p {
+    color: var(--branco);
+    text-align: justify;
+    margin-top: 8px;
+    font-size: 1.8rem;
+}
+
+.home .sobre-mim .info-minha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .sobre-mim .info-minha #idade {
+    color: var(--preto);
+}
+
+.home .sobre-mim .info-minha p {
+    background-color: var(--branco);
+    color: var(--preto);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 5px 5px #ffffff5c;
+}
+
+.home .sobre-mim p span,
+.home .sobre-mim p strong {
+    color: var(--Cyan);
+}
+
+/* SOBRE */
+.sobre {
+    grid-area: sobre;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.sobre .image.foto-minha-perfil {
+    background: url(../img/foto-minha/foto-perfil.jpg) no-repeat center center;
+    background-size: cover;
+    /* height: 320px; */
+}
+
+/* MEUS-JOGOS */
+.meus-jogos {
+    grid-area: meus-jogos;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--branco);
+}
+
+.meus-jogos .jogo.cor-de-fundo {
+    background-color: var(--preto);
+}
+
+.meus-jogos .jogo img {
+    height: 100%;
+}
+
+/* RODAPE */
+.rodape {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-area: rodape;
+    background-color: var(--branco);
+}
+
+.rodape .logo {
+    width: 190px;
+    height: 190px;
+    border: 2px solid var(--preto);
+    border-radius: 50%;
+    margin: 20px 0px 10px 0px;
+}
+
+.rodape .caixa-rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape .caixa-rodape nav .menu {
+    display: flex;
+}
+
+.rodape .caixa-rodape nav .menu li {
+    padding: 10px 15px;
+}
+
+.rodape .icones {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.rodape .icones i {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px 20px 10px;
+}
+
+.rodape .icones .fa-linkedin:hover {
+    color: var(--azul);
+    background-color: lightgray;
+}
+
+.rodape .icones .fa-github-square:hover {
+    color: var(--branco);
+    background-color: var(--DarkBlue3);
+}
+
+.rodape .icones .fa-instagram:hover {
+    background-image: linear-gradient(var(--rosa), var(--vermelho), var(--amarelho));
+    color: var(--branco);
+}
+
+.rodape .icones .fa-server:hover {
+    color: var(--branco);
+    background-color: var(--DarkBlue3);
+}
+
+/* COISA SEPARADA */
+
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 52, 50, 0.749);
+    visibility: hidden;
+}
+
+.conteudo-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+.modal .fechar-modal {
+    background-color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--DarkBlue3);
+    font-weight: bold;
+    font-size: 2.2rem;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modal iframe {
+    width: 250px;
+    height: 503px;
+}
+
+.modal.aberto {
+    opacity: 1;
+    visibility: visible;
+}
