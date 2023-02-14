@@ -1,6 +1,48 @@
+/* DE 425PX ATÉ 768PX */
 @media (min-width: 425px){
     .modal iframe {
         width: 330px;
         height: 664px;
+    }
+}
+
+/* DE 768PX ATÉ */
+@media (min-width: 768px){
+    .home .texto-objetivo {
+        width: 560px;
+        margin: 0px auto;
+    }
+
+    .home .image.foto-minha-fundo,
+    .home .image.foto-minha-perfil {
+        width: 500px;
+        height: 500px;
+        margin: 0px auto;
+    }
+
+    .home .image.foto-minha-fundo {
+        margin-bottom: 30px;
+    }
+
+    .home .texto-objetivo p,
+    .home .sobre-mim p {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .home .sobre-mim {
+        width: 560px;
+        margin: 0px auto;
+    }
+
+    .home .sobre-mim .info-minha {
+        margin: 10px 0px;
+    }
+
+    .meus-jogos {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .modal iframe {
     }
 }

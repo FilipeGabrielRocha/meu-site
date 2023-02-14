@@ -197,8 +197,7 @@ body {
     color: var(--Cyan);
 }
 
-.home .image,
-.sobre .image {
+.home .image {
     width: 100%;
     height: 100%;
 }
