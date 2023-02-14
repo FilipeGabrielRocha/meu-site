@@ -77,7 +77,6 @@ body {
 }
 
 .cabeca .mini-menu {
-    /* display: none; */
     width: 60px;
     height: 60px;
     align-self: flex-end;
@@ -141,22 +140,19 @@ body {
     transition: .2s ease-in-out;
 }
 
-.cabeca nav ul {
-    display: none;
-}
-
 .cabeca input:checked ~ ul {
     display: block;
 }
 
 .cabeca nav {
     position: absolute;
-    top: 23px;
+    top: 22px;
     right: 20px;
     z-index: 1;
 }
 
 .cabeca nav ul {
+    display: none;
     width: 170px;
     background-color: var(--DarkBlue3);
     padding: 20px;
@@ -178,7 +174,7 @@ body {
     grid-area: home;
     display: grid;
     grid-template-columns: 1fr;
-    /* height: 60vh; */
+    max-width: var(--max-width);
 }
 
 .home .texto-objetivo {
@@ -249,12 +245,6 @@ body {
 }
 
 /* SOBRE */
-.sobre {
-    grid-area: sobre;
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
 .sobre .image.foto-minha-perfil {
     background: url(../img/foto-minha/foto-perfil.jpg) no-repeat center center;
     background-size: cover;
@@ -267,6 +257,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color: var(--branco);
+    max-width: var(--max-width);
 }
 
 .meus-jogos .jogo.cor-de-fundo {

@@ -1,3 +1,19 @@
+:root {
+    --DarkBlue1: #1c2431; /* (intro and email sign up background) */
+    --DarkBlue2: #181f2a; /* (main background) */
+    --DarkBlue3: #0b1523; /* (footer background) */
+    --DarkBlue4: #202a3c; /* (testimonials background) */
+    --Cyan: #65e2d9; /* (inside call-to-action gradient) */
+    --Blue: #339ecc; /* (inside call-to-action gradient) */
+    --LightRed: #ff4242; /* (error) */
+    --branco: #ffffff;
+    --preto: #000;
+    --azul: #0A66C2;
+    --rosa: #D40297;
+    --vermelho: #E3002D;
+    --amarelho: #F7BA21;
+}
+
 /* DE 425PX ATÉ 768PX */
 @media (min-width: 425px){
     .modal iframe {
@@ -6,8 +22,25 @@
     }
 }
 
-/* DE 768PX ATÉ */
+/* DE 768PX ATÉ 1024PX*/
 @media (min-width: 768px){
+    .cabeca .mini-menu {
+        display: none;
+    }
+
+    .cabeca .cabeca-container nav {
+        top: 13px;
+    }
+
+    .cabeca .cabeca-container nav .menu {
+        display: flex;
+        margin: auto 0px;
+        width: 100%;
+        margin-top: 0px;
+        padding: 0px;
+        background-color: var(--DarkBlue4);
+    }
+
     .home .texto-objetivo {
         width: 560px;
         margin: 0px auto;
@@ -30,9 +63,13 @@
         text-align: center;
     }
 
+    .home .sobre-mim .info-minha p {
+        text-align: left;
+    }
+
     .home .sobre-mim {
         width: 560px;
-        margin: 0px auto;
+        margin: auto;
     }
 
     .home .sobre-mim .info-minha {
@@ -43,6 +80,63 @@
         grid-template-columns: repeat(5, 1fr);
     }
 
-    .modal iframe {
+    .rodape .caixa-rodape nav .menu li a {
+        font-size: 2.5rem;
+    }
+}
+
+/* DE 1024PX ATÉ 1440PX */
+@media (min-width: 1024px){
+    .home {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .home .texto-objetivo,
+    .home .sobre-mim {
+        width: 400px;
+    }
+
+    .home .image.foto-minha-fundo {
+        margin-bottom: 0px;
+        margin: auto;
+    }
+
+    .home .image.foto-minha-perfil {
+        width: 400px;
+        height: 400px;
+        margin: auto;
+        box-shadow: 0px 0px 45px var(--Cyan);
+    }
+
+    .meus-jogos .jogo {
+        transition: .2s ease-in-out;
+    }
+
+    .meus-jogos .jogo:hover {
+        opacity: 0.5;
+    }
+}
+
+@media (min-width: 1025px){
+    .home .texto-objetivo,
+    .home .sobre-mim {
+        width: 500px;
+    }
+
+    .home .texto-objetivo {
+        margin: auto 0px auto auto;
+        
+    }
+
+    .home .sobre-mim {
+        margin: auto auto auto 0px;
+    }
+
+    .home .image.foto-minha-fundo {
+        margin: auto auto auto 20px;
+    }
+
+    .home .image.foto-minha-perfil {
+        margin: auto 40px auto auto;
     }
 }
