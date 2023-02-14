@@ -42,7 +42,6 @@ body {
 
 .cabeca .cabeca-container {
     display: flex;
-    flex-direction: column;
     min-height: 75px;
     justify-content: space-between;
     align-items: center;
@@ -56,54 +55,122 @@ body {
     border: 3px solid var(--Blue);
     border-radius: 50%;
     background-color: var(--branco);
+    margin-left: 15px;
+    box-shadow: 0px 0px 30px var(--Cyan);
 }
 
-.cabeca .cabeca-container .menu-hamburguer {
-    background-color: var(--Blue);
+.cabeca nav ul {
+    display: flex;
+}
+
+.cabeca nav ul a {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+    margin: 5px;
+}
+
+.cabeca nav ul a:hover {
+    background-color: var(--Cyan);
+}
+
+.cabeca .mini-menu {
+    /* display: none; */
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+}
+
+.cabeca nav label {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabeca .hamburguer {
+    background-color: var(--Cyan);
+    position: relative;
+    display: block;
     width: 30px;
     height: 2px;
-    position: relative;
-    margin: 10px 0px 20px 0px;
+    top: 29px;
+    left: 15px;
+    transition: .5s ease-in-out;
 }
 
-.cabeca .cabeca-container .menu-hamburguer:before {
-    background-color: var(--Blue);
+.cabeca .hamburguer:before {
+    background-color: var(--Cyan);
     content: "";
+    display: block;
     width: 100%;
     height: 100%;
     position: absolute;
+    transition: .2s ease-in-out;
     top: -10px;
-    display: block;
 }
 
-.cabeca .cabeca-container .menu-hamburguer:after {
-    background-color: var(--Blue);
+.cabeca .hamburguer:after {
+    background-color: var(--Cyan);
     content: "";
+    display: block;
     width: 100%;
     height: 100%;
     position: absolute;
+    transition: .2s ease-in-out;
     bottom: -10px;
-    display: block;
 }
 
-.cabeca .cabeca-container nav.desativado {
+.cabeca nav input {
     display: none;
 }
 
-.cabeca .cabeca-container nav .menu {
-    display: flex;
-    flex-direction: column;
+.cabeca nav input:checked ~ label .hamburguer {
+    transform: rotate(45deg);
+}
+
+.cabeca nav input:checked ~ label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+    transition: .2s ease-in-out;
+}
+
+.cabeca nav input:checked ~ label .hamburguer::after {
+    transform: rotate(90deg);
+    bottom: 0;
+    transition: .2s ease-in-out;
+}
+
+.cabeca nav ul {
+    display: none;
+}
+
+.cabeca input:checked ~ ul {
+    display: block;
+}
+
+.cabeca nav {
+    position: absolute;
+    top: 23px;
+    right: 20px;
+    z-index: 1;
+}
+
+.cabeca nav ul {
+    width: 170px;
+    background-color: var(--DarkBlue3);
+    padding: 20px;
+    margin-top: 13px;
+}
+
+.cabeca nav ul a {
     text-align: center;
+    padding: 20px;
+    display: block;
 }
 
-.cabeca .cabeca-container nav .menu li {
-    padding: 10px;
-    margin: 3px 0px;
-    color: var(--Blue);
-}
-
-.cabeca .cabeca-container nav .menu li:hover {
-    background-color: var(--DarkBlue1);
+.cabeca nav ul a li {
+    color: var(--branco);
 }
 
 /* HOME */
@@ -225,6 +292,7 @@ body {
     border: 2px solid var(--preto);
     border-radius: 50%;
     margin: 20px 0px 10px 0px;
+    box-shadow: 0px 0px 20px var(--preto);
 }
 
 .rodape .caixa-rodape {
