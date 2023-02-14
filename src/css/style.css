@@ -324,6 +324,7 @@ body {
 .modal iframe {
     width: 250px;
     height: 503px;
+    margin-bottom: 40px;
 }
 
 .modal.aberto {
