@@ -292,8 +292,7 @@ body {
     height: 100vh;
     top: 0;
     left: 0;
-    /* background-color: rgba(52, 52, 50, 0.749); */
-    background-color: antiquewhite;
+    background-color: rgba(52, 52, 50, 0.749);
     visibility: hidden;
 }
 
