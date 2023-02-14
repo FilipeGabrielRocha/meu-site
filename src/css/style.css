@@ -302,10 +302,10 @@ body {
 }
 
 .modal .fechar-modal {
-    background-color: var(--branco);
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--branco);
     color: var(--DarkBlue3);
     font-weight: bold;
     font-size: 2.2rem;
@@ -313,6 +313,7 @@ body {
     height: 40px;
     cursor: pointer;
     border-radius: 10px;
+    margin-top: 35px;
 }
 
 .modal iframe {
