@@ -1,7 +1,6 @@
 const botaoModal = document.querySelector('.fechar-modal')
 
 const listaMeusJogos = document.querySelectorAll('.jogo')
-console.log(listaMeusJogos);
 
 const divModal = document.querySelector('.modal')
 

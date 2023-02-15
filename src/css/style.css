@@ -39,6 +39,7 @@ body {
 /* CABECA */
 .cabeca {
     grid-area: cabeca;
+    position: relative;
 }
 
 .cabeca .cabeca-container {

@@ -15,12 +15,12 @@
     <title>Meu Site</title>
 </head>
 <body onload="calcIdade()">
-    <div class="video-fundo">
-        <video class="video" autoplay loop muted>
-            <source src="./src/video/universo-meteoros.mp4" type="video/mp4">
-        </video>
-    </div>
     <header class="cabeca">
+        <div class="video-fundo">
+            <video class="video" autoplay loop muted>
+                <source src="./src/video/universo-meteoros.mp4" type="video/mp4">
+            </video>
+        </div>
         <div class="cabeca-container">
             <a href="#" class="logo">
                 <img src="src/img/foto-logo/filipe-rocha.png" alt="logo">
@@ -29,23 +29,23 @@
             <nav id="nav" class="desativado">
                 <input type="checkbox" name="menu-hamburguer" id="menu-hamburguer">
 
-                <label for="menu-hamburguer">
+                <label class="botaoHamburguer" for="menu-hamburguer">
                     <div class="mini-menu">
                         <span class="hamburguer"></span>
                     </div>
                 </label>
 
                 <ul class="menu">
-                    <a href="#home">
+                    <a class="linkMenu" href="#home">
                         <li>Home</li>
                     </a>
-                    <a href="#sobre">
+                    <a class="linkMenu" href="#sobre">
                         <li>Sobre</li>
                     </a>
-                    <a href="#meus-jogos">
+                    <a class="linkMenu" href="#meus-jogos">
                         <li>Meus Jogos</li>
                     </a>
-                    <a href="#rodape">
+                    <a class="linkMenu" href="#rodape">
                         <li>Contato</li>
                     </a>
                 </ul>
@@ -205,5 +205,6 @@
 
     <script src="src/js/idade.js"></script>
     <script src="src/js/modal.js"></script>
+    <script src="src/js/menu.js"></script>
 </body>
 </html>
