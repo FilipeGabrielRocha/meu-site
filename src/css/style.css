@@ -176,7 +176,7 @@ body {
     grid-area: home;
     display: grid;
     grid-template-columns: 1fr;
-    max-width: var(--max-width);
+    /* max-width: var(--max-width); */
 }
 
 .home .texto-objetivo {

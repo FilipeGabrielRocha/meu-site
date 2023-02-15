@@ -129,11 +129,6 @@
         margin: 0px auto 100px auto;
     }
 
-    .video-fundo {
-        display: flex;
-        justify-content: center;
-    }
-
     .home .texto-objetivo,
     .sobre .sobre-mim {
         width: 500px;
@@ -154,5 +149,10 @@
 
     .sobre .image.foto-minha-perfil {
         margin: auto 40px auto auto;
+    }
+
+    .video-fundo {
+        display: flex;
+        justify-content: center;
     }
 }
