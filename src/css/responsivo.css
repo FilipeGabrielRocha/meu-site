@@ -47,7 +47,7 @@
     }
 
     .home .image.foto-minha-fundo,
-    .home .image.foto-minha-perfil {
+    .sobre .image.foto-minha-perfil {
         width: 500px;
         height: 500px;
         margin: 0px auto;
@@ -58,21 +58,21 @@
     }
 
     .home .texto-objetivo p,
-    .home .sobre-mim p {
+    .sobre .sobre-mim p {
         font-size: 2.2rem;
         text-align: center;
     }
 
-    .home .sobre-mim .info-minha p {
+    .sobre .sobre-mim .info-minha p {
         text-align: left;
     }
 
-    .home .sobre-mim {
+    .sobre .sobre-mim {
         width: 560px;
         margin: auto;
     }
 
-    .home .sobre-mim .info-minha {
+    .sobre .sobre-mim .info-minha {
         margin: 10px 0px;
     }
 
@@ -89,10 +89,16 @@
 @media (min-width: 1024px){
     .home {
         grid-template-columns: 1fr 1fr;
+        height: 85vh;
+    }
+
+    .sobre {
+        grid-template-columns: 1fr 1fr;
+        height: 80vh;
     }
 
     .home .texto-objetivo,
-    .home .sobre-mim {
+    .sobre .sobre-mim {
         width: 400px;
     }
 
@@ -101,7 +107,7 @@
         margin: auto;
     }
 
-    .home .image.foto-minha-perfil {
+    .sobre .image.foto-minha-perfil {
         width: 400px;
         height: 400px;
         margin: auto;
@@ -118,8 +124,18 @@
 }
 
 @media (min-width: 1025px){
+    .meus-jogos {
+        grid-template-columns: repeat(5, 250px);
+        margin: 0px auto 100px auto;
+    }
+
+    .video-fundo {
+        display: flex;
+        justify-content: center;
+    }
+
     .home .texto-objetivo,
-    .home .sobre-mim {
+    .sobre .sobre-mim {
         width: 500px;
     }
 
@@ -128,7 +144,7 @@
         
     }
 
-    .home .sobre-mim {
+    .sobre .sobre-mim {
         margin: auto auto auto 0px;
     }
 
@@ -136,7 +152,7 @@
         margin: auto auto auto 20px;
     }
 
-    .home .image.foto-minha-perfil {
+    .sobre .image.foto-minha-perfil {
         margin: auto 40px auto auto;
     }
 }

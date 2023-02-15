@@ -10,6 +10,7 @@ body {
     display: grid;
     grid-template-areas: "cabeca"
                          "home"
+                         "sobre"
                          "meus-jogos"
                          "rodape";
     grid-template-columns: 1fr;
@@ -204,34 +205,40 @@ body {
     height: 320px;
 }
 
-.home .image.foto-minha-perfil {
-    background: url(../img/foto-minha/foto-perfil.jpg) no-repeat center center;
-    background-size: cover;
-    height: 320px;
+/* SOBRE */
+.sobre {
+    display: grid;
+    grid-area: sobre;
 }
 
-.home .sobre-mim {
+.sobre .sobre-mim {
     padding: 15px;
 }
 
-.home .sobre-mim p {
+.sobre .sobre-mim p {
     color: var(--branco);
     text-align: justify;
     margin-top: 8px;
     font-size: 1.8rem;
 }
 
-.home .sobre-mim .info-minha {
+.sobre .image.foto-minha-perfil {
+    background: url(../img/foto-minha/foto-perfil.jpg) no-repeat center center;
+    background-size: cover;
+    height: 320px;
+}
+
+.sobre .sobre-mim .info-minha {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.home .sobre-mim .info-minha #idade {
+.sobre .sobre-mim .info-minha #idade {
     color: var(--preto);
 }
 
-.home .sobre-mim .info-minha p {
+.sobre .sobre-mim .info-minha p {
     background-color: var(--branco);
     color: var(--preto);
     padding: 10px;
@@ -239,16 +246,9 @@ body {
     box-shadow: 4px 5px 5px #ffffff5c;
 }
 
-.home .sobre-mim p span,
-.home .sobre-mim p strong {
+.sobre .sobre-mim p span,
+.sobre .sobre-mim p strong {
     color: var(--Cyan);
-}
-
-/* SOBRE */
-.sobre .image.foto-minha-perfil {
-    background: url(../img/foto-minha/foto-perfil.jpg) no-repeat center center;
-    background-size: cover;
-    /* height: 320px; */
 }
 
 /* MEUS-JOGOS */
@@ -387,4 +387,27 @@ body {
 .modal.aberto {
     opacity: 1;
     visibility: visible;
+}
+
+.video-fundo {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+.video-fundo .video {
+    height: 100vh;
+}
+
+.video-fundo::after {
+    content: "";
+    background-color: var(--LightRed);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.574) 50%, rgba(0,0,0,1) 100%);
 }
