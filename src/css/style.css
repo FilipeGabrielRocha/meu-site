@@ -322,9 +322,12 @@ body {
     margin: 10px 10px 20px 10px;
 }
 
+.rodape .icones .icones-fab:hover {
+    border: 2px solid var(--preto);
+}
+
 .rodape .icones .fa-linkedin:hover {
     color: var(--azul);
-    background-color: lightgray;
 }
 
 .rodape .icones .fa-github-square:hover {
