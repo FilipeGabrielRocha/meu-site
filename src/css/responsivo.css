@@ -14,6 +14,17 @@
     --amarelho: #F7BA21;
 }
 
+/* DE 320PX ATÉ 375PX */
+@media (min-width: 320px){
+    .cabeca nav ul {
+        width: 200px;
+    }
+
+    .cabeca nav ul a li {
+        font-size: 1.9rem;
+    }
+}
+
 /* DE 425PX ATÉ 768PX */
 @media (min-width: 425px){
     .modal iframe {
