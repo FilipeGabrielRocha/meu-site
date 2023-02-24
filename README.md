@@ -6,7 +6,7 @@
  - O projeto é responsivo.
  - O menu no celular é feito inteiramente com CSS.
  - Quando escolhe alguma opção no menu ele some automaticamente.
- - Quando clica em algum jogo, abre uma janela (sem sair do site) mostrano qual jogo é.
+ - Quando clica em algum jogo, abre uma janela (sem sair do site) mostrando qual jogo é.
  - Navegação de dentro do site respectivamente em cada seção.
  
  As tecnologias usadas são: HTML, CSS e JavaScript
