@@ -11,6 +11,8 @@
  
  As tecnologias usadas são: HTML, CSS e JavaScript
  
+ Link do Site: https://filipegabrielrocha.github.io/meu-site/
+ 
  # Tela no Desktop
 ![tela-meu-site-pc](https://user-images.githubusercontent.com/94459039/221191919-382f8215-8bbd-4e14-a93a-e78802a3d320.png)
 
