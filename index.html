@@ -1,210 +1,273 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="src/favicon/filipe-rocha.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="src/favicon/filipe-rocha.ico"
+      type="image/x-icon"
+    />
 
-    <link rel="stylesheet" href="src/css/font-awesome.css">
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/responsivo.css">
+    <link rel="stylesheet" href="src/css/font-awesome.css" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/responsivo.css" />
 
     <title>Meu Site</title>
-</head>
-<body onload="calcIdade()">
+  </head>
+  <body onload="calcIdade()">
     <header id="home" class="cabeca">
-        <div class="cabeca-container">
-            <a href="#" class="logo">
-                <img src="src/img/foto-logo/filipe-rocha.png" alt="logo">
+      <div class="cabeca-container">
+        <a href="#" class="logo">
+          <img src="src/img/foto-logo/filipe-rocha.png" alt="logo" />
+        </a>
+
+        <nav id="nav" class="desativado">
+          <input type="checkbox" name="menu-hamburguer" id="menu-hamburguer" />
+
+          <label class="botaoHamburguer" for="menu-hamburguer">
+            <div class="mini-menu">
+              <span class="hamburguer"></span>
+            </div>
+          </label>
+
+          <ul class="menu">
+            <a class="linkMenu" href="#home">
+              <li>Home</li>
             </a>
-
-            <nav id="nav" class="desativado">
-                <input type="checkbox" name="menu-hamburguer" id="menu-hamburguer">
-
-                <label class="botaoHamburguer" for="menu-hamburguer">
-                    <div class="mini-menu">
-                        <span class="hamburguer"></span>
-                    </div>
-                </label>
-
-                <ul class="menu">
-                    <a class="linkMenu" href="#home">
-                        <li>Home</li>
-                    </a>
-                    <a class="linkMenu" href="#sobre">
-                        <li>Sobre</li>
-                    </a>
-                    <a class="linkMenu" href="#meus-jogos">
-                        <li>Meus Jogos</li>
-                    </a>
-                    <a class="linkMenu" href="#rodape">
-                        <li>Contato</li>
-                    </a>
-                </ul>
-            </nav>
-        </div>
+            <a class="linkMenu" href="#sobre">
+              <li>Sobre</li>
+            </a>
+            <a class="linkMenu" href="#meus-jogos">
+              <li>Meus Jogos</li>
+            </a>
+            <a class="linkMenu" href="#rodape">
+              <li>Contato</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section class="home">
-        <div class="video-fundo">
-            <video class="video" autoplay loop muted>
-                <source src="./src/video/universo-meteoros.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="texto-objetivo">
-            <p>
-                Este site é meramente um treino, estou criando sem nenhuma tecnologia a mais, apenas <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span>. Estou colocando em prática o conhecimentos adquiridos em meus estudos.
-            </p>
+      <div class="video-fundo">
+        <video class="video" autoplay loop muted>
+          <source src="./src/video/universo-meteoros.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="texto-objetivo">
+        <p>
+          Este site é meramente um treino, estou criando sem nenhuma tecnologia
+          a mais, apenas <span>HTML</span>, <span>CSS</span> e
+          <span>JavaScript</span>. Estou colocando em prática o conhecimentos
+          adquiridos em meus estudos.
+        </p>
 
-            <p>
-                Todas as páginas que vão ser criadas são com o intuito de testar minhas habilidades, <strong>NÃO SERÁ USADO PARA FINS LUCRATIVOS</strong>, caso a empresa dona do site, que eu copiei, queira que eu remova o conteúdo, assim será feito sem resistência.
-            </p>
+        <p>
+          Todas as páginas que vão ser criadas são com o intuito de testar
+          minhas habilidades,
+          <strong>NÃO SERÁ USADO PARA FINS LUCRATIVOS</strong>, caso a empresa
+          dona do site, que eu copiei, queira que eu remova o conteúdo, assim
+          será feito sem resistência.
+        </p>
 
-            <p>
-                Estou estudando através de canais de YouTube e cursos Onlines.
-            </p>
+        <p>Estou estudando através de canais de YouTube e cursos Onlines.</p>
 
-            <p>
-                O intuito desse site é falar um pouco sobre mim e de alguns dos jogos que eu joguei na minha vida até então, os jogos que estarão amostra no meu site, são os meus preferidos e que marcaram minha vida de jogador de jogos eletrônicos, vulgo Gamer.
-            </p>
-        </div>
-        <div class="image foto-minha-fundo"></div>
+        <p>
+          O intuito desse site é falar um pouco sobre mim e de alguns dos jogos
+          que eu joguei na minha vida até então, os jogos que estarão amostra no
+          meu site, são os meus preferidos e que marcaram minha vida de jogador
+          de jogos eletrônicos, vulgo Gamer.
+        </p>
+      </div>
+      <div class="image foto-minha-fundo"></div>
     </section>
     <section id="sobre" class="sobre">
-        <div class="image foto-minha-perfil"></div>
-        <div class="sobre-mim">
-            <p>
-                Oi, Meu nome é Filipe Gabriel Rocha, seja bem-vindo(a)!
-            </p>
+      <div class="image foto-minha-perfil"></div>
+      <div class="sobre-mim">
+        <p>Oi, Meu nome é Filipe Gabriel Rocha, seja bem-vindo(a)!</p>
 
-            <p>
-                Sou apaixonado por tecnologia, entrei na área de estudo da programação desde 2020, comecei por backend, mas quando tive um contato com frontend foi o momento que realmente vi que queria seguir carreira por lá, desde então estou estudando as tecnologias <span>HTML</span>, <span>CSS</span> e <span>JavaScript</span> e me aventurando nos frameworks.
-            </p>
+        <p>
+          Sou apaixonado por tecnologia, entrei na área de estudo da programação
+          desde 2020, comecei por backend, mas quando tive um contato com
+          frontend foi o momento que realmente vi que queria seguir carreira por
+          lá, desde então estou estudando as tecnologias <span>HTML</span>,
+          <span>CSS</span> e <span>JavaScript</span> e me aventurando nos
+          frameworks.
+        </p>
 
-            <div class="info-minha">
-                <p>
-                    <strong>Nome:</strong> Filipe Gabriel Rocha<br>
-                    <strong>Nascimento:</strong> 14/11/2000<br>
-                    <strong>Idade: </strong><span id="idade"></span> anos<br>
-                    <strong>Estado Civil</strong>: Solteiro<br>
-                    <strong>Estado Social:</strong> Namorando<br>
-                    <strong>Hobbie:</strong> Jogar jogos eletrônicos
-                </p>
-            </div>
+        <div class="info-minha">
+          <p>
+            <strong>Nome:</strong> Filipe Gabriel Rocha<br />
+            <strong>Nascimento:</strong> 14/11/2000<br />
+            <strong>Idade: </strong><span id="idade"></span> anos<br />
+            <strong>Estado Civil</strong>: Solteiro<br />
+            <strong>Estado Social:</strong> Namorando<br />
+            <strong>Hobbie:</strong> Jogar jogos eletrônicos
+          </p>
         </div>
+      </div>
     </section>
 
     <section id="meus-jogos" class="meus-jogos">
-        <div class="jogo">
-            <a href="src/pages/anthem.html" target="tela">
-                <img src="src/img/foto-meus-jogos/anthem-logo.jpg" alt="anthem">
-            </a>
-        </div>
-        <div class="jogo">
-            <a href="src/pages/apex-legends.html" target="tela">
-                <img src="src/img/foto-meus-jogos/apex-legends-logo.png" alt="apex legends">
-            </a>
-        </div>
-        <div class="jogo">
-            <a href="src/pages/destiny.html" target="tela">
-                <img src="src/img/foto-meus-jogos/destiny-logo.png" alt="destiny">
-            </a>
-        </div>
-        <div class="jogo cor-de-fundo">
-            <a href="src/pages/elite-dangerous.html" target="tela">
-                <img src="src/img/foto-meus-jogos/elite-dangerous-logo.png" alt="elite dangerous">
-            </a>
-        </div>
-        <div class="jogo">
-            <a href="src/pages/god-of-war.html" target="tela">
-                <img src="src/img/foto-meus-jogos/god-of-war-logo.jpg" alt="god of war">
-            </a>
-        </div>
-        <div class="jogo">
-            <a href="src/pages/grand-chase.html" target="tela">
-                <img src="src/img/foto-meus-jogos/grandchase-logo.jpg" alt="grand chase">
-            </a>
-        </div>
-        <div class="jogo">
-            <a href="src/pages/lunia-z.html" target="tela">
-                <img src="src/img/foto-meus-jogos/lunia-z-logo.jpg" alt="lunia z">
-            </a>
-        </div>
-        <div class="jogo cor-de-fundo">
-            <a href="src/pages/minecraft.html" target="tela">
-                <img src="src/img/foto-meus-jogos/minecraft-logo.png" alt="minecraft">
-            </a>
-        </div>
-        <div class="jogo cor-de-fundo">
-            <a href="src/pages/path-of-exile.html" target="tela">
-                <img src="src/img/foto-meus-jogos/path-of-exile-logo.png" alt="path of exile">
-            </a>
-        </div>
-        <div class="jogo cor-de-fundo">
-            <a href="src/pages/runescape.html" target="tela">
-                <img src="src/img/foto-meus-jogos/runescape-logo.png" alt="runescape">
-            </a>
-        </div>
-        <div class="jogo">
-            <a href="src/pages/speed-racer.html" target="tela">
-                <img src="src/img/foto-meus-jogos/speedracer-logo.png" alt="speed racer">
-            </a>
-        </div>
-        <div class="jogo">
-            <a href="src/pages/starcraft-2.html" target="tela">
-                <img src="src/img/foto-meus-jogos/starcraft2-logo.png" alt="star craft 2">
-            </a>
-        </div>
-        <div class="jogo">
-            <a href="src/pages/the-last-of-us.html" target="tela">
-                <img src="src/img/foto-meus-jogos/the-last-logo.png" alt="the last of us">
-            </a>
-        </div>
-        <div class="jogo">
-            <a href="src/pages/titanfall-2.html" target="tela">
-                <img src="src/img/foto-meus-jogos/titanfall2-logo.png" alt="titanfall 2">
-            </a>
-        </div>
-        <div class="jogo">
-            <a href="src/pages/uncharted.html" target="tela">
-                <img src="src/img/foto-meus-jogos/uncharted-logo.jpg" alt="uncharted">
-            </a>
-        </div>
+      <div class="jogo">
+        <a href="src/pages/anthem.html" target="tela">
+          <img src="src/img/foto-meus-jogos/anthem-logo.jpg" alt="anthem" />
+        </a>
+      </div>
+      <div class="jogo">
+        <a href="src/pages/apex-legends.html" target="tela">
+          <img
+            src="src/img/foto-meus-jogos/apex-legends-logo.png"
+            alt="apex legends"
+          />
+        </a>
+      </div>
+      <div class="jogo">
+        <a href="src/pages/destiny.html" target="tela">
+          <img src="src/img/foto-meus-jogos/destiny-logo.png" alt="destiny" />
+        </a>
+      </div>
+      <div class="jogo cor-de-fundo">
+        <a href="src/pages/elite-dangerous.html" target="tela">
+          <img
+            src="src/img/foto-meus-jogos/elite-dangerous-logo.png"
+            alt="elite dangerous"
+          />
+        </a>
+      </div>
+      <div class="jogo">
+        <a href="src/pages/god-of-war.html" target="tela">
+          <img
+            src="src/img/foto-meus-jogos/god-of-war-logo.jpg"
+            alt="god of war"
+          />
+        </a>
+      </div>
+      <div class="jogo">
+        <a href="src/pages/grand-chase.html" target="tela">
+          <img
+            src="src/img/foto-meus-jogos/grandchase-logo.jpg"
+            alt="grand chase"
+          />
+        </a>
+      </div>
+      <div class="jogo">
+        <a href="src/pages/lunia-z.html" target="tela">
+          <img src="src/img/foto-meus-jogos/lunia-z-logo.jpg" alt="lunia z" />
+        </a>
+      </div>
+      <div class="jogo cor-de-fundo">
+        <a href="src/pages/minecraft.html" target="tela">
+          <img
+            src="src/img/foto-meus-jogos/minecraft-logo.png"
+            alt="minecraft"
+          />
+        </a>
+      </div>
+      <div class="jogo cor-de-fundo">
+        <a href="src/pages/path-of-exile.html" target="tela">
+          <img
+            src="src/img/foto-meus-jogos/path-of-exile-logo.png"
+            alt="path of exile"
+          />
+        </a>
+      </div>
+      <div class="jogo cor-de-fundo">
+        <a href="src/pages/runescape.html" target="tela">
+          <img
+            src="src/img/foto-meus-jogos/runescape-logo.png"
+            alt="runescape"
+          />
+        </a>
+      </div>
+      <div class="jogo">
+        <a href="src/pages/speed-racer.html" target="tela">
+          <img
+            src="src/img/foto-meus-jogos/speedracer-logo.png"
+            alt="speed racer"
+          />
+        </a>
+      </div>
+      <div class="jogo">
+        <a href="src/pages/starcraft-2.html" target="tela">
+          <img
+            src="src/img/foto-meus-jogos/starcraft2-logo.png"
+            alt="star craft 2"
+          />
+        </a>
+      </div>
+      <div class="jogo">
+        <a href="src/pages/the-last-of-us.html" target="tela">
+          <img
+            src="src/img/foto-meus-jogos/the-last-logo.png"
+            alt="the last of us"
+          />
+        </a>
+      </div>
+      <div class="jogo">
+        <a href="src/pages/titanfall-2.html" target="tela">
+          <img
+            src="src/img/foto-meus-jogos/titanfall2-logo.png"
+            alt="titanfall 2"
+          />
+        </a>
+      </div>
+      <div class="jogo">
+        <a href="src/pages/uncharted.html" target="tela">
+          <img
+            src="src/img/foto-meus-jogos/uncharted-logo.jpg"
+            alt="uncharted"
+          />
+        </a>
+      </div>
     </section>
 
     <div class="modal">
-        <div class="conteudo-modal">
-            <span class="fechar-modal">X</span>
-            <iframe src="" name="tela" id="tela" frameborder="0"></iframe>
-        </div>
+      <div class="conteudo-modal">
+        <span class="fechar-modal">X</span>
+        <iframe src="" name="tela" id="tela" frameborder="0"></iframe>
+      </div>
     </div>
 
     <footer id="rodape" class="rodape">
-        <div class="caixa-rodape">
-            <a href="#" class="logo">
-                <img src="src/img/foto-logo/filipe-rocha.png" alt="logo">
-            </a>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#meus-jogos">Meus Jogos</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="caixa-rodape">
+        <a href="#" class="logo">
+          <img src="src/img/foto-logo/filipe-rocha.png" alt="logo" />
+        </a>
+        <nav>
+          <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#meus-jogos">Meus Jogos</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+          </ul>
+        </nav>
+      </div>
 
-        <div class="icones">
-            <a href="https://www.linkedin.com/in/filipe-gabriel-rocha-a4446516a/" target="_blank"><i class="icones-fab fab fa-linkedin"></i></a>
-            <a href="https://github.com/FilipeGabrielRocha" target="_blank"><i class="icones-fab fab fa-github-square"></i></a>
-            <a href="https://www.instagram.com/_filiperochaa/" target="_blank"><i class="icones-fab fab fa-instagram"></i></a>
-            <a href="https://filipegabrielrocha.github.io/portfolio/" target="_blank"><i class="icones-fab fas fa-server"></i></a>
-        </div>
+      <div class="icones">
+        <a
+          href="https://www.linkedin.com/in/filipe-gabriel-rocha-a4446516a/"
+          target="_blank"
+          ><i class="icones-fab fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/FilipeGabrielRocha" target="_blank"
+          ><i class="icones-fab fab fa-github-square"></i
+        ></a>
+        <a href="https://www.instagram.com/_filiperochaa/" target="_blank"
+          ><i class="icones-fab fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://filipegabrielrocha.github.io/portfolio/"
+          target="_blank"
+          ><i class="icones-fab fas fa-server"></i
+        ></a>
+      </div>
     </footer>
 
     <script src="src/js/idade.js"></script>
     <script src="src/js/modal.js"></script>
     <script src="src/js/menu.js"></script>
-</body>
+  </body>
 </html>
